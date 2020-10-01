@@ -131,17 +131,3 @@ class FibonacciHeap(Heap):
         else:
             for i in range(0, len(self.value)):
                 FibonacciHeap.insert(fibonnaci_heap, self[i])
-
-
-print('HEAP TESTS')
-
-list_values = [9, 6, 8, 10]
-list_values1 = [9, 6, 8, 10]
-list_values2 = [4, 2, 5, 15]
-print('test insert:' + str(Heap.insert(Heap(list_values), 44)))
-print('test merge:' + str(Heap.merge(Heap(list_values1), Heap(list_values2))))
-
-
-print(type(Heap(list_values)))
-Heap.find_min(Heap(list_values))
-Heap.insert(Heap(list_values), 5)
